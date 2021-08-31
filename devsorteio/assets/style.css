@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(102, 240, 102);
+}
+.container{
+  max-width:25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #999;
+  margin: auto;
+  border-radius: 0.6rem;
+  padding: 1rem 0;
+  margin-top: 5rem;
+}
+.container img{
+  width: 8rem;
+}
+.container h1{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+#prizeDraw{
+  width: 20rem;
+  height: 3rem;
+  outline: 0;
+  text-align: center;
+
+  border: none;
+  border-radius: 0.4rem;
+}
+input[type="submit"],
+input[type="reset"]{
+  width: 5rem;
+  height: 2rem;
+  margin-bottom: 0.6rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: 300;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.container input[type="submit"]:hover,
+input[type="reset"]:hover{
+  background: rgb(102, 240, 102);
+  color: #fff;
+}
+#result{
+  width: 20rem;
+  height: 4rem;
+  background: #fff;
+  
+  border-radius: 0.4rem;
+  text-align: center;
+  padding: 0.5rem;
+}
