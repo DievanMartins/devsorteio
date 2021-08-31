@@ -3,17 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --main-color:rgb(102, 240, 102);
+  --color-cont:#999;
+  --white-color:#fff;
 body{
   font-family: 'Nunito', sans-serif;
-  background-color: rgb(102, 240, 102);
+  background-color: var(--main-color);
+  overflow-x: hidden;
 }
 .container{
-  max-width:25rem;
+  max-width:30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #999;
+  background: var(--color-cont);
   margin: auto;
   border-radius: 0.6rem;
   padding: 1rem 0;
@@ -27,11 +32,10 @@ body{
   font-size: 1.5rem;
 }
 #prizeDraw{
-  width: 20rem;
+  width: 90%;
   height: 3rem;
   outline: 0;
   text-align: center;
-
   border: none;
   border-radius: 0.4rem;
 }
@@ -48,15 +52,61 @@ input[type="reset"]{
 }
 .container input[type="submit"]:hover,
 input[type="reset"]:hover{
-  background: rgb(102, 240, 102);
-  color: #fff;
+  background: var(--main-color);
+  color: var(--white-color);
 }
 #result{
-  width: 20rem;
+  width: 90%;
   height: 4rem;
-  background: #fff;
-  
+  background: var(--white-color);
   border-radius: 0.4rem;
   text-align: center;
   padding: 0.5rem;
+}
+
+/*RESPOSIVO*/
+@media(max-width: 768px){
+  .container{
+    max-width:70%;
+    margin-top: 3rem;
+  }
+  label{
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 425px){
+  .container{
+    max-width:90%;
+    margin-top: 2rem;
+  }
+  .container img{
+    width: 6rem;
+  }
+}
+
+@media(max-width: 375px){
+  .container{
+    max-width:90%;
+    margin-top: 2rem;
+  }
+  .container img{
+    width: 6rem;
+  }
+}
+
+@media(max-width: 320px){
+  .container{
+    max-width:90%;
+    margin-top: 2rem;
+  }
+  .container img{
+    width: 6rem;
+  }
+  #prizeDraw{
+    width: 90%;
+  }
+  #result{
+    width: 90%;
+  }
 }
